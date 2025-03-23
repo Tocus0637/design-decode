@@ -1,0 +1,130 @@
+.focus{
+
+
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 0;
+  cursor:default;
+  background-color: #f1e3c8;
+  height: 100%;
+  width: 90%;
+}
+
+.focus .img-box .obj {
+  box-shadow: 10px 10px 10px 4px  rgba(46, 45, 45, 0.875),-10px -10px 10px 4px  black;  
+  margin-inline: auto;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.description {
+  display: none;
+}
+
+.focus .row-image {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 3%;
+  height: 55%;
+}
+.img-box p{
+  text-align: center;
+}
+
+.focus .row-image .img-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.focus .img-box .description {
+  background-color: #ACA490;
+  box-shadow: -3px 10px 0px 0px  black;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+}
+
+.description p {
+  border: 1px 1px black;
+  color: black;
+  text-align: center;
+  font-size: 115%;
+  padding: 4.5%;
+}
+
+.focus .title-preview {
+  display: none;
+}
+
+.focus .close-button{
+  z-index: 2;
+  transition: all 0.8s ease;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.313);
+  color: white;
+  width: 3.5%;
+  height: 7%;
+  border-radius: 100%;
+  margin: 0.8%;
+  padding: 0.5%;
+  font-size: 150%;
+  font-weight: 700;
+  text-align: center;
+}
+.preview .img-box p{
+  display: none; 
+}
+
+
+.preview .img-box:nth-child(even) {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+.focus .img-box .obj {
+  width: 100%;
+}
+.focus .row-image {
+  flex-direction: column;
+  height: 50%;
+  padding-inline: 5%;
+  gap: 3rem;
+}
+.focus .close-button{
+  height: 4%;
+  width: 10%;
+}
+.focus .img-box p{
+  display: block; 
+}
+.main-space {
+  height: 200%;
+}
+.main-space .focus {
+  height: 100%;
+}
+.img-box  p{
+  text-align: center;
+  font-size: 70%;
+  width: 100%;
+}
+
+.focus .description {
+  font-size: 1.2vh;
+  word-break: break-all;
+}
+.description p{
+   width: 100%;
+   margin: 0px;
+   padding:0px;
+}
+}
